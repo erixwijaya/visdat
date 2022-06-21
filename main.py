@@ -144,7 +144,7 @@ slider.on_change('value',update_cinema)
 
 cinema_select = Select(
     options= [str(x) for x in ints],
-    value= '304',
+    value= '407',
     title='Cinema Code'
 )
 cinema_select.on_change('value', update_cinema)
