@@ -22,17 +22,17 @@ ints = cinemas['cinema_code'].value_counts().sort_index().index.tolist()
 ints_film = films['film_code'].value_counts().sort_index().index.tolist()
 
 source = ColumnDataSource(data={
-    'cinema_code'       : cinemas[cinemas['cinema_code'] == 407]['cinema_code'],
-    'date'              : cinemas[cinemas['cinema_code'] == 407]['date'],
-    'tickets_sold'      : cinemas[cinemas['cinema_code'] == 407]['tickets_sold'],
-    'total_sales'       : cinemas[cinemas['cinema_code'] == 407]['total_sales']/1000000000,
+    'cinema_code'       : cinemas[cinemas['cinema_code'] == 304]['cinema_code'],
+    'date'              : cinemas[cinemas['cinema_code'] == 304]['date'],
+    'tickets_sold'      : cinemas[cinemas['cinema_code'] == 304]['tickets_sold'],
+    'total_sales'       : cinemas[cinemas['cinema_code'] == 304]['total_sales']/1000000000,
 })
 
 source_film = ColumnDataSource(data={
-    'film_code'       : films[films['film_code'] == 1497]['film_code'],
-    'date'              : films[films['film_code'] == 1497]['date'],
-    'tickets_sold'      : films[films['film_code'] == 1497]['tickets_sold'],
-    'total_sales'       : films[films['film_code'] == 1497]['total_sales']/1000000000,
+    'film_code'       : films[films['film_code'] == 1576]['film_code'],
+    'date'              : films[films['film_code'] == 1576]['date'],
+    'tickets_sold'      : films[films['film_code'] == 1576]['tickets_sold'],
+    'total_sales'       : films[films['film_code'] == 1576]['total_sales']/1000000000,
 })
 
 source_top_cinema = ColumnDataSource(grouped)
